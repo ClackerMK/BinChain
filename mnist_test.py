@@ -1,11 +1,7 @@
-import logging
-
-import chainer
-from chainer import links as L, iterators, optimizers, training, optimizer_hooks
+from chainer import ChainList
 from chainer import functions as F
-from chainer import Chain, ChainList
+from chainer import links as L, iterators, optimizers, training
 from chainer.datasets import mnist
-from chainer.optimizer_hooks import WeightDecay
 from chainer.training import extensions
 
 import binary_chains

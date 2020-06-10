@@ -1,13 +1,7 @@
-import numpy as np
-from chainer import cuda, FunctionNode, backend, Variable
-from chainer import functions as F
-from chainer import links as L
+from chainer import utils
 from chainer.functions.connection.convolution_2d import Convolution2DFunction
 from chainer.functions.connection.linear import LinearFunction
-from chainer.utils import type_check
-from chainer import utils
 from chainer.utils import argument
-
 
 import binarization_functions
 

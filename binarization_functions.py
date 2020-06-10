@@ -1,9 +1,7 @@
 import numpy as np
-from chainer.backends.cuda import cupy as cp
 from chainer import FunctionNode, backend, Variable
 from chainer.backends import cuda
-import chainer.functions as F
-import chainer.links as L
+from chainer.backends.cuda import cupy as cp
 
 
 class StraightThroughEstimator(FunctionNode):

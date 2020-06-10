@@ -1,14 +1,10 @@
-import chainer
 from chainer import links as L, optimizers, iterators, training
 from chainer.datasets import get_cifar10, get_mnist
-from chainer.links import VGG16Layers
 from chainer.training import extensions
 
 import binary_chains
 import real_networks
 from hooks import BinaryWeightClip
-
-from experimentator import Experiment, order
 
 
 def train_network(network, name, train, test, reload=True, max_epoch=100, binary=True, alpha=0.0001):
